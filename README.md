@@ -1,27 +1,30 @@
-# AngularUniversity
+# Projeto Angular! 🌟
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+> 🎓 Projeto criado em sala na faculdade Fatec Itu/SP
 
-## Development server
+> 👨‍🏫 Aula ministrada por: Glauco Toledo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📝 Anotações:
+    node -v
+    ng -v
+    visualizar se na raiz no gitBash está em master/main
+    git config --global user.name "yLottus" --replace-all
+    git config --global user.email "gvebooksofc@gmail.com" --replace-all
 
-## Code scaffolding
+    No vsCode:
+      Códigos Angular:
+      - ng new (NOME) --no-standalone
+      - ng g c (NOME) --skip-test
+      - ng s -o
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+      No código:
+      - Em app criado o product.ts para usar o interface em product/product.component.ts dentro do export class:
+      products: Product[] = [];
 
-## Build
+    BOOTSTRAP:
+    ng add @ng-bootstrap/ng-bootstrap
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### 🎉 Créditos dos emojis:
+> <a href="https://emojipedia.org" target="_blank">https://emojipedia.org</a>
