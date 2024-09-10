@@ -21,4 +21,10 @@ export class ProductsTableComponent implements OnInit {
       next: data => this.products = data     
     });
   }
+
+  delete(product: Product) {
+    this.service.delete(product).subscribe({
+      next: () => this.loadProducts()
+    })
+  }
 }
