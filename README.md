@@ -33,3 +33,22 @@
 
 #### 🎉 Créditos dos emojis:
 > <a href="https://emojipedia.org" target="_blank">https://emojipedia.org</a>
+
+
+
+
+
+
+## De hoje:
+
+- ng g c music-form (Terminal)
+- no html principal a renderização da tabela - no app.component.html
+- colocar um h1 escrito: Cadastro de Produtos
+- colocar o: <router-outlet></router-outlet>
+- vai em ( app-routing.module.ts ) e em const routes: Routes = [] adicionar dois objetos
+- ficando assim: 
+    {path: 'products', component: ProductsTableComponent},
+    {path: 'product/:id', component: ProductFormComponent}
+- no musics-table.component colocar a tag <a> no nome, ficando:
+    <a [routerLink]="['/music', music.id]"{{music.name}} a>
+- em product-form > no HTML: Criou uma section com h1 (cadastro de música) e adicionar o form dentro form com label e input para cada coluna.
