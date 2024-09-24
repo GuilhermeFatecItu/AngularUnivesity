@@ -1,17 +1,17 @@
 <div class="container">
-    <form>
+    <form [formGroup]="formGroupProduct">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Nome</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite o seu nome">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite o seu nome" formControlName="name">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Preço</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite o preço">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite o preço" formControlName="price">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Categoria</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite a categoria">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite a categoria" formControlName="category">
         </div>
-        <button type="button" class="btn btn-primary">Salvar</button>
+        <button type="button" class="btn btn-primary" (click)="uptade()" >Salvar</button>
     </form>
 </div>
