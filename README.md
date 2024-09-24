@@ -52,3 +52,5 @@
 - no musics-table.component colocar a tag <a> no nome, ficando:
     <a [routerLink]="['/music', music.id]"{{music.name}} a>
 - em product-form > no HTML: Criou uma section com h1 (cadastro de música) e adicionar o form dentro form com label e input para cada coluna.
+
+Perfil principal: GuilhermeFranciscoPereira
