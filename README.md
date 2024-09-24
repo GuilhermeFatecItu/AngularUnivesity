@@ -32,7 +32,7 @@
 #
 
 #### 🎉 Créditos dos emojis:
-> <a href="https://emojipedia.org" target="_blank">https://emojipedia.org</a>
+>  <a href="https://emojipedia.org" target="_blank">https://emojipedia.org</a>
 
 
 
