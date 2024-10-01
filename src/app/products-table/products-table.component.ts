@@ -10,7 +10,7 @@ import { ProductService } from '../product.service';
 export class ProductsTableComponent implements OnInit {
   products: Product[] = [];
 
-  constructor(private service: ProductService){}
+  constructor(private service: ProductService, private router: Router){}
 
   ngOnInit(): void {
     this.loadProducts();

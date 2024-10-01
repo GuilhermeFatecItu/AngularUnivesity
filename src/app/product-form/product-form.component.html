@@ -12,6 +12,7 @@
             <label for="exampleFormControlInput1" class="form-label">Categoria</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite a categoria" formControlName="category">
         </div>
-        <button type="button" class="btn btn-primary" (click)="uptade()" >Salvar</button>
+        <button type="button" class="btn btn-primary" (click)="uptade()" *ngIf="isEditing" >Editar</button>
+        <button type="button" class="btn btn-primary" (click)="save()" *ngIf="!isEditing'" >Salvar</button>
     </form>
 </div>

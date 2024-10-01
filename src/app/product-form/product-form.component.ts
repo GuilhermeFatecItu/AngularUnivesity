@@ -12,6 +12,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class ProductFormComponent implements OnInit {
 
   formGroupProduct: FormGroup;
+  isEditing: boolean = false;
 
   constructor(private router: Router, private activeRoute: ActivatedRoute, private service: ProductService, private formBuilder: FormBuilder) {
     this.formGroupProduct = formBuilder.group({
@@ -24,7 +25,10 @@ export class ProductFormComponent implements OnInit {
 
   ngOnInit(): void {
     const id = Number(this.activeRoute.snapshot.paramMap.get("id"));
-    this.loadProduct(id);
+    if (id != 0) {
+      this.loadProduct(id);
+      this.isEditing = true;
+    }
   }
 
   loadProduct(id: number) {
@@ -39,4 +43,7 @@ export class ProductFormComponent implements OnInit {
     })
   }
 
+  create() {
+    this.router.navigate(['product'])
+  }
 }
